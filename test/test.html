@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://localhost:8080/post-test" method="post">
+      <form>
+        <div class="form-group">
+          <label>Auftragsnummer *</label> <input type="text" class="form-control" name="text_Auftragsnummer" placeholder="Auftragsnummer" required="required">
+        </div>
+
+        <div class="form-group">
+          <label>Kundenname *</label> <input type="text" class="form-control" name="text_Kundenname" placeholder="Kundenname" required="required">
+        </div>
+
+        <div class="form-group">
+          <label>Anzahl Schläuche *</label> <input type="text" class="form-control" name="text_Anzahl_Schlauuche" placeholder="Anzahl Schläuche" required="required">
+        </div>
+
+        <div class="form-group">
+          <label>Durchmesser *</label> <input type="text" class="form-control" name="text_Durchmesser" placeholder="Durchmesser DN" required="required">
+        </div>
+
+        <div class="form-group">
+          <label>Armaturen</label>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="checkbox_Armaturen" value="Nicht Armaturen"> <label class="form-check-label">Nicht Armaturen</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="checkbox_Armaturen" value="Armaturen"> <label class="form-check-label">Armaturen</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Planzeit Produktion *</label> <input type="text" class="form-control" name="text_Planzeit" placeholder="Placeholder Textfeld min" required="required">
+        </div>
+
+        <div class="form-group">
+          <label>Rampentermin Auftrag *</label> <input type="date" class="form-control form-control-sm" name="date_Rampentermin_Auftrag" value="">
+        </div>
+
+        <div class="form-group">
+          <label>Rampenttermin Produktion *</label> <input type="date" class="form-control form-control-sm" name="date_Rampenttermin_Produktion" value="">
+        </div>
+
+        <div class="form-group">
+          <label>Bestellung am Lager bis am: *</label> <input type="date" class="form-control form-control-sm" name="date_Bestellung_am_Lager_bis_am" value="">
+        </div>
+
+        <div class="form-group">
+          <label>Auftrag</label> <select class="form-control" name="selectbox_Auftrag_Status">
+            <option value="in_Produktion">
+              in Produktion
+            </option>
+
+            <option value="Warten">
+              Warten
+            </option>
+
+            <option value="Abgeschlossen">
+              Abgeschlossen
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Schweissbahn</label> <select class="form-control" name="selectbox_Schweissbahn">
+            <option value="M2">
+              M2
+            </option>
+
+            <option value="M1">
+              M1
+            </option>
+
+            <option value="Hand">
+              Hand
+            </option>
+
+            <option value="Sonstig">
+              Sonstig
+            </option>
+          </select>
+          <input type="submit" value="Submit">
+        </div><small>Felder markiert mit * sind Pflichtfelder.</small>
+      </form>
+   </form>
+  </body>
+</html>
